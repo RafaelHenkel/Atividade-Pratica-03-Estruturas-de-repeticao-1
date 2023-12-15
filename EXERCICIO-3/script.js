@@ -11,4 +11,5 @@ let tabuada = Number(prompt("digite o numero a ser multiplicado"));
 
 for (let i = Number(prompt("Digite a quantidade de iteracoes")); (i = i); i--) {
   console.log(`${i} * ${tabuada} = ${i * tabuada}`);
+  document.write(`${i} * ${tabuada} = ${i * tabuada} <br>`);
 }

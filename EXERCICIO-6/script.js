@@ -3,8 +3,18 @@
 // como mostrado abaixo:
 // 30 [29] 28 27 26 25 24 [23] 22 21 20 [19] 18 [17] 16...
 
-let contagem = 30;
-
-for (let i= 0; i<=contagem; i++){
-    
+for (let i = 30; i >= 1; i--) {
+  let primos = true;
+  for (let j = 2; j < i; j++) {
+    if (i % j == 0) {
+      primos = false;
+    }
+  }
+  if (i == 1) {
+    console.log(i);
+  } else if (primos) {
+    console.log(`[${i}]`);
+  } else {
+    console.log(i);
+  }
 }
